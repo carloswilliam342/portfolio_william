@@ -1,0 +1,175 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #00ff5e;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+section .topo-do-site {
+    padding: 40px 4%;
+}
+
+section .topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00FF08;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* SEÇÃO ESPECIALIDADES */
+#especialidades {
+    padding: 60px 4%;
+}
+
+#especialidades h2 {
+    color: #00FF08;
+    margin-bottom: 20px;
+}
+
+#especialidades ul {
+    list-style-type: none;
+}
+
+#especialidades ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* SEÇÃO SOBRE */
+#sobre {
+    padding: 60px 4%;
+    background-color: #111;
+}
+
+#sobre h2 {
+    color: #00FF08;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    line-height: 1.6;
+}
+
+/* SEÇÃO PROJETOS */
+#projetos {
+    padding: 60px 4%;
+}
+
+#projetos h2 {
+    color: #00FF08;
+    margin-bottom: 20px;
+}
+
+.projetos {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    flex: 1;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projeto h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    color: #ccc;
+}
